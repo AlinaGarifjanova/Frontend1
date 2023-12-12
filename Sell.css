@@ -1,0 +1,278 @@
+*{
+    font-family: Helvetica, sans-serif;
+    font-size: medium;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f2ee;
+    margin: 0;
+}
+
+header{
+    max-width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    background-color: white;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 1em;
+    height: 6vh;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+    margin: 0 0 7em 7em;
+    gap: 3em;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+    cursor: pointer;
+}
+
+.nav-list li{
+    margin-bottom: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img,
+.icon-tabler {
+    display: none;
+    margin-left: 1em;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 2em;
+        left: 0;
+        background-color: white;
+        max-width: 100%;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-list a {
+        font-size: 18px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .logo img,
+    .icon-tabler {
+        margin-right: 0;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+li:hover{
+    color: black;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.sell-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skyline{
+    flex: 0 0 auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.skyline img{
+    width: 100%;
+    display: block;
+    height: auto;
+    max-height: 100vh;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+.container {
+    width: 600px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0, 0, 0.1);
+}
+
+.container p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 20px;
+}
+
+
+.submit{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.submit.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.submit-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.submit-header .title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.submit-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none ;
+    font-size:1.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.submit-body{
+    padding: 10px 15px;
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 300ms ease-in-out;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 5vh;
+        left: 0;
+        background-color: white;
+        max-width: 100%;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .logo img,
+    .icon-tabler {
+        margin-right: 0;
+    }
+
+    .navbar {
+        padding: 1em;
+    }
+
+    ul {
+        gap: 1em;
+    }
+
+    li {
+        margin: 0.5em;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 120%;
+        margin-bottom: 10px;
+    }
+
+    .submit {
+        padding: 10px 15px;
+    }
+
+    .container p {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

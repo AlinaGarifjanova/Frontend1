@@ -1,0 +1,189 @@
+/* Standardstil för alla element */
+*{
+    font-family: Helvetica, sans-serif;
+    font-size: medium;
+    box-sizing: border-box;
+}
+
+/* Grundstil för sidan */
+body{
+    background-color: #f4f2ee;
+    margin: 0;
+}
+
+/* Headerstil */
+header{
+    width: 100%;
+}
+/* navbar stil */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    background-color: white;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 1em;
+    height: 6vh;
+}
+
+/* List stil i navbaren  */
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 100%;
+    margin: 0 0 7em 7em;
+    gap: 3em;
+}
+
+/* Listelement i navbar stilen */
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+    cursor: pointer;
+}
+
+/*Extra stil för listemelt i responsivt läge  */
+.nav-list li{
+    margin-bottom: 5px;
+}
+/* logo stilen */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* stil för logobilden och menyikoner */
+.logo img,
+.icon-tabler {
+    margin-left: 1em;
+    display: none;
+}
+
+/* Media query för att göra sidan responsiv */
+@media (max-width: 768px) {
+   /*Gömmer nav-listan i responsivt läge */
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 2em;
+        left: 0;
+        background-color: white;
+        max-width: 100%;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    /* stilar för responsivt läge */
+    .nav-list a {
+        font-size: 18px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .logo img,
+    .icon-tabler {
+        margin-right: 0;
+    }
+}
+
+/* Länk stil*/
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.flex{
+    display: flex;
+}
+
+/* Stil för sidans innehåll*/
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stil för bild i sektionen "neighbourhood" */
+.neighbourhood {
+    flex: 0 0 auto;
+    width: 100%;
+    overflow: hidden;
+
+}
+/* Bildens stil i sektionen "neighbourhood" */
+.neighbourhood img {
+    width: 100%;
+    display: block;
+    height: auto;
+    max-height: 100vh;
+}
+
+h1 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.content {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+/* Container-stil för kort */
+.container {
+    padding: 16px;
+}
+/* Klarering av floats och flexbox */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Titelstil */
+.title {
+    color: grey;
+}
