@@ -24,8 +24,8 @@ header{
     background-color: white;
     align-items: flex-start;
     max-width: 100%;
-    padding: 1em;
-    height: 7.2vh;
+    padding:10px;
+    height: 6vh;
 }
 ul{
     display: flex;
@@ -119,7 +119,6 @@ h1{
 .card-container {
     height: 300px;
     width: 200px;
-    align-content: baseline;
 }
 
 .card img {
@@ -132,16 +131,16 @@ h1{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
 }
 
 
 .column {
     display: block;
     justify-content: center;
-    max-width: calc(33.3% - 2em);
+    max-width: calc(33.3% - 1em);
     box-sizing: border-box;
     margin-bottom: 20px;
-    gap: 1em;
     padding: 2em;
 }
 
