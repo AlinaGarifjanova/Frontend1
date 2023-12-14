@@ -25,7 +25,7 @@ header{
     align-items: flex-start;
     max-width: 100%;
     padding: 1em;
-    height: 7.2vh;
+    height: 6vh;
 }
 ul{
     display: flex;
@@ -70,7 +70,7 @@ li{
 }
 
 /* Media query för att göra sidan responsiv */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .nav-list {
         display: none;
         flex-direction: column;
@@ -120,13 +120,13 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: whitesmoke;
+    color: white;
 }
 
 .overlay-text h1{
-    font-size: 4em;
+    font-size: 4.5em;
     font-family: "Times New Roman", sans-serif;
-    margin-bottom: 1.8em;
+    margin-bottom: 3em;
 }
 
 .flex{

@@ -73,7 +73,7 @@ li{
 }
 
 /* Media query för att göra sidan responsiv */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
    /*Gömmer nav-listan i responsivt läge */
     .nav-list {
         display: none;
