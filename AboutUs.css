@@ -8,12 +8,16 @@
 /* Grundstil för sidan */
 body{
     background-color: #f4f2ee;
-    margin: 0;
+    margin-top: 6vh;
 }
 
 /* Headerstil */
 header{
     width: 100%;
+    position: fixed;
+    top:0;
+    background-color: white;
+    z-index: 1000;
 }
 /* navbar stil */
 .navbar{
@@ -24,7 +28,7 @@ header{
     align-items: flex-start;
     max-width: 100%;
     padding: 1em;
-    height: 6vh;
+    height: 7.2vh;
 }
 
 /* List stil i navbaren  */
@@ -33,7 +37,7 @@ ul{
     justify-content: space-evenly;
     list-style-type: none;
     width: 100%;
-    margin: 0 0 7em 7em;
+    margin: 0 0 0 0;
     gap: 3em;
 }
 
@@ -49,6 +53,11 @@ li{
 /*Extra stil för listemelt i responsivt läge  */
 .nav-list li{
     margin-bottom: 5px;
+}
+
+.nav-list a{
+    font-size: large;
+    color: black;
 }
 /* logo stilen */
 .logo {
@@ -150,6 +159,12 @@ h1 {
     margin-bottom: 16px;
     box-sizing: border-box;
     padding: 0 8px;
+}
+
+footer{
+    background-color: transparent;
+    color: black;
+    text-align: center;
 }
 
 @media screen and (max-width: 650px) {
